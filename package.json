@@ -1,0 +1,23 @@
+{
+  "name": "test-tech",
+  "version": "1.0.0",
+  "description": "LeetCode env",
+  "main": "index.js",
+  "type": "module",
+  "dependencies": {
+    "typescript": "^4.4.4"
+  },
+  "devDependencies": {
+    "prettier": "2.4.1"
+  },
+  "scripts": {
+    "prettify": "prettier -w src",
+    "start": "tsc",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "leetcode"
+  ],
+  "author": "Kazbek Beteev",
+  "license": "ISC"
+}

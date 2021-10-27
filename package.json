@@ -12,7 +12,9 @@
   },
   "scripts": {
     "prettify": "prettier -w src",
-    "start": "tsc",
+    "transpile": "tsc",
+    "execute": "node src/index.js",
+    "start": "npm run prettify && npm run transpile && npm run execute",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [

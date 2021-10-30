@@ -6,6 +6,10 @@
  * */
 export function printPerformance(name: string, fn: Function) {
     console.time(`measure ${name}`);
-    fn();
+    const result = fn();
     console.timeEnd(`measure ${name}`);
+
+    return function(logResults: boolean) {
+        logResults && console.log(result);
+    }
 }

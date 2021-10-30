@@ -14,7 +14,7 @@
     "prettify": "prettier -w src",
     "transpile": "tsc",
     "execute": "node src/index.js",
-    "start": "npm run prettify && npm run transpile && npm run execute",
+    "start": "npm run transpile && npm run execute",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [

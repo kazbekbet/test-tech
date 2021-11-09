@@ -10,7 +10,7 @@ class Reactive<T> {
         reaction();
     }
 
-    setValue = (newValue: T) => {
+    setValue(newValue: T) {
         if (newValue instanceof Object || newValue instanceof Array) {
             this.valueSetter(newValue);
             return;

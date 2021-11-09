@@ -1,8 +1,11 @@
-import { createState } from './utils/reactive-proxy/state-creator.js';
+import { useState } from './utils/reactive-hooks/hooks.js';
 
-const state = createState({
-    count: 1,
-    name: 'Kazbek',
-});
+function MyComponent() {
+    const [getName, setName] = useState('Kazbek');
 
-state.count = 4;
+    setName('Nastya');
+
+    return `<h1>${getName()}</h1>`;
+}
+
+console.log(MyComponent());
